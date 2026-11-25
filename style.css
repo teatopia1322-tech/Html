@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Teachers";
+    src: url("../fontes/Teachers/Teachers-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fontes/Lora/Lora-VariableFont_wght.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Teachers";
+}
+body{
+    background-color: #ffffff;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+img.vermelha{
+    width: 150px;
+    height: 160px;
+}
+img.verde{
+    width: 150px;
+    height: 160px;
+}
+img.azul{
+    width: 150px;
+    height: 160px;
+    bottom: 0;
+}
+img.amarela{
+    width: 150px;
+    height: 160px;
+    bottom: 0;
+    
+}
+img.logo{
+    max-width: 90%;
+    width: 570px;
+    height: 400px;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 5%;
+}
+img.esquerda{
+    visibility: hidden;
+    width: 300px ;
+    height: 300px;
+    position: absolute;
+    left: 430px;
+    top: 300px;
+      cursor: pointer;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+img.direita{
+    visibility: hidden;
+    width: 300px ;
+    height: 300px;
+    position: absolute;
+    right: 430px;
+    top: 300px;
+       cursor: pointer;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+section.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+h1{
+    font-size: 378%;
+    color: #000000;
+    text-align: center;
+    height: 100%;
+    top: -20px;
+    position: relative;
+    font-family: "Teachers";
+}
+div.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: "Lora";
+}
+button.entrar{
+    width: 250px;
+    height: 65px;
+    background-color: #006eff;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-size: 25px;
+    font-family: "Lora", serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+}
+button.entrar:hover{
+     border: 3px solid #006eff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #006eff;
+      transform: translateY(-4px);
+    box-shadow: 0 8px 0 #1d4ed8, 0 12px 16px rgba(0, 0, 0, 0.25);
+}
+button.entrar:hover + img.esquerda{   
+    visibility: visible;
+     transform: translateY(-6px);
+    filter: drop-shadow(0 12px 10px rgba(0, 0, 0, 0.3));
+   
+}
+button.entrar:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1d4ed8;
+}
+
+button.cadastro{
+    width: 250px;
+    height: 65px;
+    background-color: #006eff;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-size: 25px;
+    font-family: "Lora", serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button.cadastro:hover{
+    border: 3px solid #006eff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #006eff;
+      transform: translateY(-4px);
+    box-shadow: 0 8px 0 #1d4ed8, 0 12px 16px rgba(0, 0, 0, 0.25);
+}
+button.cadastro:hover + img.direita{   
+    visibility: visible;
+     transform: translateY(-6px);
+    filter: drop-shadow(0 12px 10px rgba(0, 0, 0, 0.3));
+  
+}
+button.entrar:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1d4ed8;
+}
+section.baixo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
