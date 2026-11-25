@@ -71,4 +71,19 @@ border-radius: 10px;
 border-color: #cfcfcf ; 
 box-sizing: border-box;
 transform: translatex(-50%);
+allign-items: center;
 }
+.senha{
+    display: flex;
+    justify-content: space-between;
+}
+section.baixo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
