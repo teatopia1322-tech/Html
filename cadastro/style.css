@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Teachers";
+    src: url("../fontes/Teachers/Teachers-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fontes/Lora/Lora-VariableFont_wght.ttf");
+}
 *{
     padding: 0;
     margin: 0;
@@ -31,5 +40,35 @@ img.amarela{
     width: 150px;
     height: 160px;
     bottom: 0;
-    
+}
+img.logo{
+    max-width: 90%;
+    width: 270px;
+    height: 150px;
+    display: block;
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+section.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.cadastro_body {
+position: relative;
+top: 50%;
+padding: 60px;
+z-index: 90;
+position: relative;
+width: 450px;
+height: 550px;
+margin-left: 50%;
+background-color: #ffffff;
+border-radius: 10px;
+ border: 3px solid ;
+border-color: #cfcfcf ; 
+box-sizing: border-box;
+transform: translatex(-50%);
 }
